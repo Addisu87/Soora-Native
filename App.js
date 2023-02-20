@@ -8,7 +8,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Navbar />
-      <Home />
+      {/* <Home /> */}
       <About />
       <StatusBar style="auto" />
     </NavigationContainer>

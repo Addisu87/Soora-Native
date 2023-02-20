@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import tw from 'twrnc';
+import { SocialIcon } from 'react-native-elements';
 
 const About = () => {
   return (
@@ -20,6 +21,9 @@ const About = () => {
           source={require('../assets/images/landing-image-1.png')}
           style={tw`w-70 h-70`}
         />
+      </View>
+      <View>
+        <SocialIcon type="twitter" />
       </View>
     </View>
   );
