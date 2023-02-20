@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
 import Navbar from './components/Navbar';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View className="bg-gray-300 w-full h-full">
+    <NavigationContainer>
       <Navbar />
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
