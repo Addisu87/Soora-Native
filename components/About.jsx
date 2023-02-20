@@ -1,11 +1,12 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import tw from 'twrnc';
 
 const About = () => {
   return (
     <View>
       <View style={tw`p-4 items-center justify-center`}>
-        <Text style={tw`text-xl text-black dark:text-white align-middle`}>
+        <Text style={tw`text-xl text-black dark:text-white text-center`}>
           --- Coming Soon
         </Text>
         <Text

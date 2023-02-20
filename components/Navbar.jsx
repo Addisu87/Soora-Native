@@ -19,7 +19,7 @@ const Navbar = (props) => {
       </View>
 
       <View
-        style={tw`rounded-full px-6 bg-black flex flex-row px-4 py-2 items-center justify-center`}
+        style={tw`rounded-lg px-6 bg-black flex flex-row px-4 py-2 items-center justify-center`}
       >
         <Pressable onPress={onPress}>
           <Text
