@@ -17,25 +17,24 @@ const Navbar = (props) => {
           style={tw`w-48 h-8`}
         />
       </View>
-      <View style={tw`flex flex-row items-center px-4 py-2`}>
-        <View style={tw`rounded-full p-3 bg-black`}>
-          <Pressable onPress={onPress}>
-            <Text
-              style={tw`leading-relaxed tracking-relaxed text-gray-800 text-white text-lg`}
-            >
-              {title}
-            </Text>
-          </Pressable>
 
-          <View>
-            <AntDesign
-              name="arrowright"
-              size={24}
-              color="black"
-              style={tw`text-white`}
-            />
-          </View>
-        </View>
+      <View
+        style={tw`rounded-full px-6 bg-black flex flex-row px-4 py-2 items-center justify-center`}
+      >
+        <Pressable onPress={onPress}>
+          <Text
+            style={tw`leading-relaxed tracking-relaxed text-gray-800 text-white text-lg`}
+          >
+            {title}
+          </Text>
+        </Pressable>
+
+        <AntDesign
+          name="arrowright"
+          size={16}
+          color="black"
+          style={tw`text-white`}
+        />
       </View>
     </View>
   );
