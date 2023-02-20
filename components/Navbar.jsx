@@ -8,13 +8,13 @@ const Navbar = (props) => {
 
   return (
     <View
-      style={tw`ios:pt-4 android:pt-2 p-2 flex-row items-center justify-between`}
+      style={tw`ios:pt-4 android:pt-2 p-2 flex-row items-center justify-between mt-4`}
     >
       <View style={tw``}>
         <Image
           source={require('../assets/images/logo.png')}
           fadeDuration={0}
-          style={tw`w-48 h-8`}
+          style={tw`w-48 h-10`}
         />
       </View>
 
@@ -23,7 +23,7 @@ const Navbar = (props) => {
       >
         <Pressable onPress={onPress}>
           <Text
-            style={tw`leading-relaxed tracking-relaxed text-gray-800 text-white text-lg`}
+            style={tw`leading-relaxed tracking-relaxed text-white text-lg font-bold`}
           >
             {title}
           </Text>
