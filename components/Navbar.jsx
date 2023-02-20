@@ -1,30 +1,40 @@
 import React from 'react';
-import { Button, Image, View } from 'react-native';
+import { Image, View, Pressable, Text } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import tw from 'twrnc';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { onPress, title = 'Contact Us' } = props;
+
   return (
-    <View style={tw`container relative mx-auto px-6 py-2 xl:py-0`}>
-      <View style={tw`flex justify-between items-center`}>
-        <View>
-          <Image
-            source={require('../assets/images/logo.png')}
-            fadeDuration={0}
-            style={tw`w-24 h-24`}
-          />
-        </View>
-        <View style={tw`flex`}>
-          <Button
-            title="Contacts"
-            style={tw`inline-flex justify-center rounded-2xl border border-transparent bg-zinc-900 px-16 py-3 md:py-2 md:px-8 text-base font-medium text-white shadow-sm hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2`}
-          />
-          <AntDesign
-            name="arrowright"
-            size={24}
-            color="black"
-            style={tw`rotate-45`}
-          />
+    <View
+      style={tw`ios:pt-4 android:pt-2 p-2 flex-row items-center justify-between`}
+    >
+      <View style={tw``}>
+        <Image
+          source={require('../assets/images/logo.png')}
+          fadeDuration={0}
+          style={tw`w-48 h-8`}
+        />
+      </View>
+      <View style={tw`flex flex-row items-center px-4 py-2`}>
+        <View style={tw`rounded-full p-3 bg-black`}>
+          <Pressable onPress={onPress}>
+            <Text
+              style={tw`leading-relaxed tracking-relaxed text-gray-800 text-white text-lg`}
+            >
+              {title}
+            </Text>
+          </Pressable>
+
+          <View>
+            <AntDesign
+              name="arrowright"
+              size={24}
+              color="black"
+              style={tw`text-white`}
+            />
+          </View>
         </View>
       </View>
     </View>
