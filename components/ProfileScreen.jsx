@@ -7,6 +7,29 @@ const ProfileScreen = ({ navigation }, props) => {
   const [text, setText] = useState('');
   const { onPress, title = 'Notify Me' } = props;
 
+  const Icons = [
+    {
+      link: 'facebook',
+      title: 'facebook'
+    },
+    {
+      link: 'twitter',
+      title: 'twitter'
+    },
+    {
+      link: 'instagram',
+      title: 'instagram'
+    },
+    {
+      link: 'linkedin',
+      title: 'linkedin'
+    },
+    {
+      link: 'youtube',
+      title: 'youtube'
+    }
+  ];
+
   return (
     <View style={tw`flex-1 items-center justify-center`}>
       <Button title="Go back" onPress={() => navigation.goBack()} />
@@ -46,36 +69,9 @@ const ProfileScreen = ({ navigation }, props) => {
         />
       </View>
       <View style={tw`flex flex-row`}>
-        <SocialIcon
-          type="facebook"
-          onPress={() => {
-            alert('facebook');
-          }}
-        />
-        <SocialIcon
-          type="twitter"
-          onPress={() => {
-            alert('twitter');
-          }}
-        />
-        <SocialIcon
-          type="instagram"
-          onPress={() => {
-            alert('instagram');
-          }}
-        />
-        <SocialIcon
-          type="linkedin"
-          onPress={() => {
-            alert('LinkedIn');
-          }}
-        />
-        <SocialIcon
-          type="youtube"
-          onPress={() => {
-            alert('youtube');
-          }}
-        />
+        {Icons.map(({ link, title }) => (
+          <SocialIcon type={link} onPress={() => alert(title)} />
+        ))}
       </View>
     </View>
   );
