@@ -4,7 +4,7 @@ import tw from 'twrnc';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <SafeAreaView style={tw`flex-1 items-center justify-center mt-4`}>
+    <SafeAreaView style={tw`flex-1 items-center justify-center mt-2`}>
       <Button
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
