@@ -4,17 +4,18 @@ import tw from 'twrnc';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <SafeAreaView style={tw`flex-1 items-center justify-center`}>
+    <SafeAreaView style={tw`flex-1 items-center justify-center mt-4`}>
       <Button
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
       />
-
-      <View style={tw`flex-1 -mt-6`}>
+      <View style={tw`p-3`}>
         <Text style={tw`text-xl text-black dark:text-white items-center`}>
           --- Coming Soon
         </Text>
-        <Text style={tw`text-5xl font-bold text-black  tracking-wider`}>
+        <Text
+          style={tw`text-5xl font-bold text-black dark:text-white tracking-wider`}
+        >
           Bringing Muslims Together
         </Text>
       </View>
@@ -28,10 +29,10 @@ const HomeScreen = ({ navigation }) => {
           style={tw`w-40 h-14`}
         />
       </View>
-      <View style={tw`p-4 items-center justify-center`}>
+      <View style={tw`p-2 items-center justify-center`}>
         <Image
           source={require('../assets/images/landing-image-2.png')}
-          style={tw`w-70 h-70`}
+          style={tw`w-70 h-80`}
         />
       </View>
     </SafeAreaView>
