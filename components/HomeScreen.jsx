@@ -1,11 +1,19 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Button } from 'react-native';
 import tw from 'twrnc';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
-    <View>
-      <View style={tw`p-4 items-center justify-center`}>
+    <SafeAreaView style={tw`flex-1`}>
+      {/* Header */}
+      <View style={tw`flex-row items-center  justify-between px-5`}>
+        <Text>Home</Text>
+        <Button title="Home" onPress={() => navigation.navigate('Home')} />
+      </View>
+      {/* End of Header */}
+
+      {/* Body */}
+      <View style={tw`flex-1 -mt-6`}>
         <Text style={tw`text-xl text-black dark:text-white align-middle`}>
           --- Coming Soon
         </Text>
@@ -31,7 +39,7 @@ const HomeScreen = () => {
           style={tw`w-70 h-70`}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
