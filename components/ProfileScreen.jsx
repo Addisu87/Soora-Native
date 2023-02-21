@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, Image, Button, TextInput, Pressable } from 'react-native';
+import React from 'react';
+import { View, Text, Image, Pressable } from 'react-native';
 import tw from 'twrnc';
 import { SocialIcon } from 'react-native-elements';
 
 const ProfileScreen = ({ navigation }, props) => {
-  const [text, setText] = useState('');
   const { onPress, title = 'Notify Me' } = props;
 
   const Icons = [
@@ -42,22 +41,16 @@ const ProfileScreen = ({ navigation }, props) => {
           Get Notified When We Launch
         </Text>
 
-        <View
-          style={tw`relative flex justify-start w-80 text-gray-800 rounded items-center border border-gray-300 focus:outline-none focus:border-gray-400 mx-auto`}
-        >
-          <TextInput
-            setText={setText}
-            value={text}
-            style={tw`text-base leading-4 py-3 w-72 pl-12 focus:outline-none rounded`}
-          />
-
-          <Pressable onPress={onPress}>
-            <Text
-              style={tw`absolute right-4 bg-black text-white rounded-full py-2 px-4`}
-            >
-              {title}
-            </Text>
-          </Pressable>
+        <View style={tw` `}>
+          <View style={tw`relative rounded-full border border-black py-2 px-4`}>
+            <Pressable onPress={onPress}>
+              <Text
+                style={tw`leading-relaxed tracking-relaxed text-white text-lg font-bold text-right px-2 py-2 bg-black`}
+              >
+                {title}
+              </Text>
+            </Pressable>
+          </View>
         </View>
       </View>
       <View style={tw`p-4 items-center justify-center text-gray-900`}>
