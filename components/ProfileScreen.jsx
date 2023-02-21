@@ -41,16 +41,14 @@ const ProfileScreen = ({ navigation }, props) => {
           Get Notified When We Launch
         </Text>
 
-        <View style={tw` `}>
-          <View style={tw`relative rounded-full border border-black py-2 px-4`}>
-            <Pressable onPress={onPress}>
-              <Text
-                style={tw`leading-relaxed tracking-relaxed text-white text-lg font-bold text-right px-2 py-2 bg-black`}
-              >
-                {title}
-              </Text>
-            </Pressable>
-          </View>
+        <View style={tw`relative rounded-full border border-black py-2 px-4`}>
+          <Pressable onPress={onPress}>
+            <Text
+              style={tw`leading-relaxed tracking-relaxed text-white text-lg font-bold text-right px-2 py-2 bg-black`}
+            >
+              {title}
+            </Text>
+          </Pressable>
         </View>
       </View>
       <View style={tw`p-4 items-center justify-center text-gray-900`}>
