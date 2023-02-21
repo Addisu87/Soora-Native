@@ -41,10 +41,10 @@ const ProfileScreen = ({ navigation }, props) => {
           Get Notified When We Launch
         </Text>
 
-        <View style={tw`relative rounded-full border border-black py-2 px-4`}>
+        <View style={tw`rounded-full border border-black py-2 px-4`}>
           <Pressable onPress={onPress}>
             <Text
-              style={tw`leading-relaxed tracking-relaxed text-white text-lg font-bold text-right px-2 py-2 bg-black`}
+              style={tw`text-white text-lg font-bold text-center justify-center text-right py-2 px-2 bg-black w-24 left-60`}
             >
               {title}
             </Text>
@@ -58,8 +58,8 @@ const ProfileScreen = ({ navigation }, props) => {
         />
       </View>
       <View style={tw`flex flex-row`}>
-        {Icons.map(({ link, title }) => (
-          <SocialIcon type={link} onPress={() => alert(title)} />
+        {Icons.map(({ link, title }, index) => (
+          <SocialIcon key={index} type={link} onPress={() => alert(title)} />
         ))}
       </View>
       <Text style={tw`text-center justify-center text-sm`}>
