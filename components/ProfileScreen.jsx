@@ -48,7 +48,7 @@ const ProfileScreen = ({ navigation }, props) => {
           <TextInput
             setText={setText}
             value={text}
-            style={tw`placeholder-gray-800 text-base placeholder-text-base leading-4 py-3 w-72 pl-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded`}
+            style={tw`text-base leading-4 py-3 w-72 pl-12 focus:outline-none rounded`}
           />
 
           <Pressable onPress={onPress}>
@@ -71,7 +71,7 @@ const ProfileScreen = ({ navigation }, props) => {
           <SocialIcon type={link} onPress={() => alert(title)} />
         ))}
       </View>
-      <Text style={tw`text-center justify-center font-sm`}>
+      <Text style={tw`text-center justify-center text-sm`}>
         Copyright © 2022 Soora. All rights reserved
       </Text>
     </View>
