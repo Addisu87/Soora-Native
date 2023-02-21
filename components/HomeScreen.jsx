@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import tw from 'twrnc';
 
-const Home = () => {
+const HomeScreen = () => {
   return (
     <View>
       <View style={tw`p-4 items-center justify-center`}>
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;

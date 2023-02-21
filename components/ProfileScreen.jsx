@@ -3,7 +3,7 @@ import { View, Text, Image } from 'react-native';
 import tw from 'twrnc';
 import { SocialIcon } from 'react-native-elements';
 
-const About = () => {
+const ProfileScreen = () => {
   return (
     <View>
       <View style={tw`p-4 items-center justify-center`}>
@@ -29,4 +29,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ProfileScreen;
