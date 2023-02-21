@@ -32,7 +32,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={tw`p-2 items-center justify-center`}>
         <Image
           source={require('../assets/images/landing-image-2.png')}
-          style={tw`w-70 h-80`}
+          style={tw`w-60 h-70`}
         />
       </View>
     </SafeAreaView>

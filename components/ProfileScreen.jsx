@@ -55,7 +55,7 @@ const ProfileScreen = ({ navigation }, props) => {
 
           <Pressable onPress={onPress}>
             <Text
-              style={tw`absolute right-4 bg-black text-white rounded-full py-2 px-4 m-2`}
+              style={tw`absolute right-4 bg-black text-white rounded-full py-2 px-4`}
             >
               {title}
             </Text>
@@ -65,7 +65,7 @@ const ProfileScreen = ({ navigation }, props) => {
       <View style={tw`p-4 items-center justify-center text-gray-900`}>
         <Image
           source={require('../assets/images/landing-image-1.png')}
-          style={tw`w-70 h-80`}
+          style={tw`w-60 h-70`}
         />
       </View>
       <View style={tw`flex flex-row`}>
@@ -73,6 +73,9 @@ const ProfileScreen = ({ navigation }, props) => {
           <SocialIcon type={link} onPress={() => alert(title)} />
         ))}
       </View>
+      <Text style={tw`text-center justify-center font-sm`}>
+        Copyright © 2022 Soora. All rights reserved
+      </Text>
     </View>
   );
 };
