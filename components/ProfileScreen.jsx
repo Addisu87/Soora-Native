@@ -32,8 +32,6 @@ const ProfileScreen = ({ navigation }, props) => {
 
   return (
     <View style={tw`flex-1 items-center justify-center`}>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
-
       <View style={tw`p-3`}>
         <Text style={tw`text-xl text-black dark:text-white text-center`}>
           --- Coming Soon
