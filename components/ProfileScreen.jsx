@@ -6,12 +6,6 @@ import { SocialIcon } from 'react-native-elements';
 const ProfileScreen = ({ navigation }) => {
   return (
     <View style={tw`flex-1 items-center justify-center`}>
-      <Text>Profile Screen</Text>
-      <Button
-        title="Go to Details... again"
-        onPress={() => navigation.navigate('Details')}
-      />
-      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
 
       <View style={tw`p-4`}>

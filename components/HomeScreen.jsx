@@ -1,20 +1,19 @@
 import React from 'react';
-import { View, Text, Image, Button } from 'react-native';
+import { View, Text, Image, Button, SafeAreaView } from 'react-native';
 import tw from 'twrnc';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <SafeAreaView style={tw`flex-1`}>
+    <SafeAreaView style={tw`flex-1 items-center justify-center`}>
       {/* Header */}
-      <View style={tw`flex-row items-center  justify-between px-5`}>
-        <Text>Home</Text>
-        <Button title="Home" onPress={() => navigation.navigate('Home')} />
-      </View>
-      {/* End of Header */}
+      <Button
+        title="Go to Profile"
+        onPress={() => navigation.navigate('Profile')}
+      />
 
       {/* Body */}
       <View style={tw`flex-1 -mt-6`}>
-        <Text style={tw`text-xl text-black dark:text-white align-middle`}>
+        <Text style={tw`text-xl text-black dark:text-white items-center`}>
           --- Coming Soon
         </Text>
         <Text

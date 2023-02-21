@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import Navbar from './components/Navbar';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from 'react-native-screens/native-stack';
+import { StatusBar } from 'expo-status-bar';
 
 import ProfileScreen from './components/ProfileScreen';
 import HomeScreen from './components/HomeScreen';
-
+import Navbar from './components/Navbar';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
