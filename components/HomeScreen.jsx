@@ -5,20 +5,16 @@ import tw from 'twrnc';
 const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={tw`flex-1 items-center justify-center`}>
-      {/* Header */}
       <Button
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
       />
 
-      {/* Body */}
       <View style={tw`flex-1 -mt-6`}>
         <Text style={tw`text-xl text-black dark:text-white items-center`}>
           --- Coming Soon
         </Text>
-        <Text
-          style={tw`text-6xl font-bold text-black dark:text-white tracking-wider`}
-        >
+        <Text style={tw`text-5xl font-bold text-black  tracking-wider`}>
           Bringing Muslims Together
         </Text>
       </View>

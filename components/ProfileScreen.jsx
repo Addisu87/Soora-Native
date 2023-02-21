@@ -13,7 +13,7 @@ const ProfileScreen = ({ navigation }) => {
           --- Coming Soon
         </Text>
         <Text
-          style={tw`text-6xl font-bold text-black dark:text-white tracking-wider`}
+          style={tw`text-5xl font-bold text-black dark:text-white tracking-wider`}
         >
           Get Notified When We Launch
         </Text>
@@ -24,8 +24,37 @@ const ProfileScreen = ({ navigation }) => {
           style={tw`w-70 h-70`}
         />
       </View>
-      <View>
-        <SocialIcon type="twitter" />
+      <View style={tw`flex flex-row`}>
+        <SocialIcon
+          type="facebook"
+          onPress={() => {
+            alert('facebook');
+          }}
+        />
+        <SocialIcon
+          type="twitter"
+          onPress={() => {
+            alert('twitter');
+          }}
+        />
+        <SocialIcon
+          type="instagram"
+          onPress={() => {
+            alert('instagram');
+          }}
+        />
+        <SocialIcon
+          type="linkedin"
+          onPress={() => {
+            alert('LinkedIn');
+          }}
+        />
+        <SocialIcon
+          type="youtube"
+          onPress={() => {
+            alert('youtube');
+          }}
+        />
       </View>
     </View>
   );
